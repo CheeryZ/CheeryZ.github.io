@@ -147,10 +147,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>第一步：环境配置</strong></p>
-<p>下载<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a>和<a href="https://git-scm.com/" target="_blank" rel="noopener">git</a></p>
+        <p>管理员模式打开cmd</p>
+<p>1、下载<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a>和<a href="https://git-scm.com/" target="_blank" rel="noopener">git</a><br>node.js 版本查看 node -v npm -v</p>
+<p>2、安装淘宝源npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p>
+<p>3、安装hexo框架<br>cnpm install -g hexo-cli</p>
+<p>4、创建blog目录<br>mkdir blog<br>cd blog </p>
+<p>5、初始化hexo init</p>
+<p>6、启动博客<br>浏览器访问localhost:4000</p>
+<p>7、博客发表文章(markdown)<br>hexo n “###”</p>
+<p>8、hexo clean 清理<br>   hexo g     生成<br>   hexo s     启动</p>
+<p>本地搭建完成</p>
 <hr>
-
+<p>1、github 下创建仓库（注意：仓库命名 用户名.github.io）</p>
+<p>2、装git部署插件<br>cnpm install –save hexo-deployer-git</p>
+<p>3、修改_config.yml（文档最下面）<br>deploy:<br>  type: git<br>  repo: 仓库地址<br>  branch: master<br>（提醒：冒号后面加空格）</p>
+<p>4、部署远端<br>hexo d</p>
+<h2 id="远端搭建完成"><a href="#远端搭建完成" class="headerlink" title="远端搭建完成"></a>远端搭建完成</h2>
       
 
       
