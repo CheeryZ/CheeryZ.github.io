@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo和github搭建个人博客 | Cheery的博客</title>
+  <title>vue基本代码 | Cheery的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="管理员模式打开cmd 1、下载node.js和gitnode.js 版本查看node -v npm -v">
-<meta name="keywords" content="博客">
+  <meta name="description" content="vue基本代码和MVVM之间对应关系">
+<meta name="keywords" content="vue">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo和github搭建个人博客">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;21&#x2F;%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#x2F;index.html">
+<meta property="og:title" content="vue基本代码">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;25&#x2F;vue%E5%9F%BA%E6%9C%AC%E4%BB%A3%E7%A0%81&#x2F;index.html">
 <meta property="og:site_name" content="Cheery的博客">
-<meta property="og:description" content="管理员模式打开cmd 1、下载node.js和gitnode.js 版本查看node -v npm -v">
+<meta property="og:description" content="vue基本代码和MVVM之间对应关系">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-10-24T06:58:52.654Z">
+<meta property="og:updated_time" content="2019-10-25T02:24:45.180Z">
 <meta name="twitter:card" content="summary">
   
   
@@ -137,14 +137,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-使用hexo搭建个人博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-vue基本代码" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo和github搭建个人博客
+      vue基本代码
     </h1>
   
 
@@ -155,8 +155,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2019/10/21/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2019-10-21T07:52:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-21</time>
+<a href="/2019/10/25/vue%E5%9F%BA%E6%9C%AC%E4%BB%A3%E7%A0%81/" class="archive-article-date">
+  	<time datetime="2019-10-25T01:51:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-25</time>
 </a>
         
       </header>
@@ -164,25 +164,37 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<p>管理员模式打开cmd</p>
-<p>1、下载<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a>和<a href="https://git-scm.com/" target="_blank" rel="noopener">git</a><br>node.js 版本查看<br><code>node -v npm -v</code></p>
+<p>vue基本代码和MVVM之间对应关系</p>
 <a id="more"></a>
 
-<p>2、安装淘宝源<br><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p>
-<p>3、安装hexo框架<br><code>cnpm install -g hexo-cli</code></p>
-<p>4、创建blog目录<br><code>mkdir blog</code><br><code>cd blog</code></p>
-<p>5、初始化<br><code>hexo init</code></p>
-<p>6、启动博客<br><code>hexo s</code><br>浏览器访问localhost:4000</p>
-<p>7、博客发表文章(markdown)<br><code>hexo n &quot;###&quot;</code></p>
-<p>8、<code>hexo clean</code> 清理<br>   <code>hexo g</code>     生成<br>   <code>hexo s</code>     启动</p>
-<p>本地搭建完成</p>
-<hr>
-<p>1、github 下创建仓库（注意：仓库命名 用户名.github.io）</p>
-<p>2、装git部署插件<br><code>cnpm install --save hexo-deployer-git</code></p>
-<p>3、修改_config.yml（文档最下面）<br>deploy:<br>  type: git<br>  repo: 仓库地址<br>  branch: master<br>（提醒：冒号后面加空格）</p>
-<p>4、部署远端<br><code>hexo d</code></p>
-<p>远端搭建完成</p>
-
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;!--1、导入vue的包--&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!--将来new的vue实例，会控制这个元素中的所有内容--&gt;
+    &lt;!--Vue实例所控制的这个元素，就是我们的V--&gt;
+    &lt;div id=&quot;app&quot;&gt;
+        &lt;p&gt;{{msg}}&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+        //2、创建一个vue实例
+        //当我们导入包之后，在浏览器的内存中，就多了一个vue构造函数
+        //注意：我们new出来这个vm对象，就是我们MVVM中的VM调用者
+        var vm = new Vue({
+            el: &apos;#app&apos;,//表示当前我们new的这个vue实例，要控制页面的那个区域
+            //这里的data就是MVVM中的M，专门用来保存每个页面的数据
+            data: {//data属性中，存放的是el中要用的数据
+                msg: &apos;欢迎学习vue&apos;//通过vue,不用手动操作Dom元素
+            }
+        })
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
       
 
       
@@ -226,7 +238,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
         		</li>
       		
 		</ul>
@@ -245,15 +257,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/21/Linux%E5%88%9D%E7%BA%A7%E6%8C%87%E4%BB%A4/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Linux初级指令
-        
-      </div>
-    </a>
   
+    <a href="/2019/10/24/Node%E5%90%8E%E7%AB%AF%E4%B8%AD%E7%9A%84MVC%E4%B8%8E%E5%89%8D%E7%AB%AF%E4%B8%AD%E7%9A%84MVM%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Node后端中的MVC与前端中的MVM之间的区别</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
