@@ -16,7 +16,7 @@
 <meta property="og:description" content="九九乘法表（矩形）注：乘积要求做格式控制，占4个位置的宽度">
 <meta property="og:locale" content="zh">
 <meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;02&#x2F;Ut2kHZ6uAn4Cyam.png">
-<meta property="og:updated_time" content="2019-11-02T03:26:03.835Z">
+<meta property="og:updated_time" content="2019-11-02T03:45:49.577Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;02&#x2F;Ut2kHZ6uAn4Cyam.png">
   
@@ -212,7 +212,28 @@ if money[0] in [&apos;R&apos;]:
     print(&quot;${:.2f}&quot;.format(U))
 elif money[0] in [&apos;$&apos;]:
     R = 6.* eval(money[1:])
-    print(&quot;R{:.2f}&quot;.format(R))</code></pre>
+    print(&quot;R{:.2f}&quot;.format(R))</code></pre><p> <strong>回文数判断（5位数字）</strong></p>
+<pre><code>本题目要求输入一个5位自然数n，如果n的各位数字反向排列所得的自然数与n相等，则输出‘yes’，否则输出‘no’。
+
+输入格式:
+13531
+
+输出格式:
+yes
+
+输入样例1:
+13531
+输出样例1:
+yes
+输入样例2:
+13530
+输出样例2:
+no</code></pre><hr>
+<pre><code>x = input()
+if x == x[::-1]:
+    print(&quot;yes&quot;)
+else:
+    print(&quot;no&quot;)</code></pre>
       
 
       
