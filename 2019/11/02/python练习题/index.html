@@ -16,7 +16,7 @@
 <meta property="og:description" content="九九乘法表（矩形）注：乘积要求做格式控制，占4个位置的宽度">
 <meta property="og:locale" content="zh">
 <meta property="og:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;02&#x2F;Ut2kHZ6uAn4Cyam.png">
-<meta property="og:updated_time" content="2019-11-02T02:59:46.099Z">
+<meta property="og:updated_time" content="2019-11-02T03:26:03.835Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;11&#x2F;02&#x2F;Ut2kHZ6uAn4Cyam.png">
   
@@ -188,7 +188,31 @@
     for j in range(1,10):
         print(&quot;{}*{}={:&lt;4}&quot;.format(i,j,i*j),end=&quot;&quot;)
     print()</code></pre><p> <img src="https://i.loli.net/2019/11/02/Ut2kHZ6uAn4Cyam.png" alt="image.png"></p>
+<hr>
+<p><strong>汇率兑换</strong></p>
+<pre><code>按照1美元=6人民币的汇率编写一个美元和人民币的双向兑换程序
 
+输入格式:
+输入人民币或美元的金额，人民币格式如：R100，美元格式如：$100
+
+输出格式:
+输出经过汇率计算的美元或人民币的金额，格式与输入一样，币种在前，金额在后，结果保留两位小数
+
+输入样例1:
+R60
+输出样例1:
+$10.00
+输入样例2:
+$5
+输出样例2:
+R30.00</code></pre><hr>
+<pre><code> money = input()
+if money[0] in [&apos;R&apos;]:
+    U = eval(money[1:])/6
+    print(&quot;${:.2f}&quot;.format(U))
+elif money[0] in [&apos;$&apos;]:
+    R = 6.* eval(money[1:])
+    print(&quot;R{:.2f}&quot;.format(R))</code></pre>
       
 
       
